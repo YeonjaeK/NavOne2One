@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sn7-Oc-3P6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weekly Diary-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="mainVC" id="BYZ-38-t0r" customClass="ViewController" customModule="ass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-1P-JOW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1230"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="rcD-99-HEZ">
+                                        <rect key="frame" x="-2" y="1" width="378" height="1229"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3QB-Qt-WtC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6v5-uD-msU">
+                                                <rect key="frame" x="8" y="75" width="348" height="69"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sOg-yQ-72E">
+                                                <rect key="frame" x="40" y="121" width="248" height="97"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+ 
+(월요일)</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button1Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lNK-ZG-KOa"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tue.png" translatesAutoresizingMaskIntoConstraints="NO" id="qye-hp-3co">
+                                                <rect key="frame" x="15" y="212" width="348" height="75"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="FPx-rU-g00">
+                                                <rect key="frame" x="40" y="280" width="248" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(화요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button2Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jz3-7B-muv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JC8-6D-MTT">
+                                                <rect key="frame" x="40" y="23" width="306" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <state key="normal" title="2018년 4월 넷째주">
+                                                    <color key="titleColor" red="1" green="0.60253437762528206" blue="0.51545344418363603" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="J8c-I4-BfV" kind="show" id="mAm-kX-InE"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wed.png" translatesAutoresizingMaskIntoConstraints="NO" id="cP5-0P-dRf">
+                                                <rect key="frame" x="19" y="369" width="348" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ZJW-3J-bvk">
+                                                <rect key="frame" x="40" y="438" width="248" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(수요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button3Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="df4-pQ-miq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TBM-qo-IZs">
+                                                <rect key="frame" x="42" y="584" width="246" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(목요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button4Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="83y-0e-ZBy"/>
+                                                </connections>
+                                            </button>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="thu.png" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-yq-Vnd">
+                                                <rect key="frame" x="15" y="516" width="348" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fri.png" translatesAutoresizingMaskIntoConstraints="NO" id="DNj-iY-siX">
+                                                <rect key="frame" x="15" y="669" width="348" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywp-oS-p9r">
+                                                <rect key="frame" x="263" y="225" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xQ-6l-WcH">
+                                                <rect key="frame" x="263" y="75" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NR-b3-j09">
+                                                <rect key="frame" x="263" y="385" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbZ-iA-ucU">
+                                                <rect key="frame" x="263" y="536" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WTF-i6-tIz">
+                                                <rect key="frame" x="263" y="678" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sat.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xdp-nk-CZJ">
+                                                <rect key="frame" x="30" y="830" width="326" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sun.png" translatesAutoresizingMaskIntoConstraints="NO" id="hsJ-pN-ewh">
+                                                <rect key="frame" x="26" y="998" width="341" height="72"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OT2-99-oQp">
+                                                <rect key="frame" x="42" y="732" width="246" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(금요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button5Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Het-86-VGp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Ybo-hT-ssZ">
+                                                <rect key="frame" x="42" y="899" width="246" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(토요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button6Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cye-ui-Ads"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8uT-v0-F5s">
+                                                <rect key="frame" x="41" y="1063" width="246" height="91"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <rect key="contentStretch" x="0.0" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <string key="title">오늘의 일상을 기록해보세요. 
+
+(일요일)
+</string>
+                                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="Button7Clicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zYC-hk-sfj"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Y4-a4-TGP">
+                                                <rect key="frame" x="263" y="840" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUl-DH-W3C">
+                                                <rect key="frame" x="263" y="1009" width="83" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3sV-hO-XT3">
+                                                <rect key="frame" x="283" y="127" width="92" height="85"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Sticker"/>
+                                                <connections>
+                                                    <action selector="ChangeButton:" destination="21l-Pv-Ph8" eventType="touchUpInside" id="ScV-PE-9Tt"/>
+                                                    <segue destination="riE-dF-s3k" kind="show" id="yVq-jg-QUy"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1250" id="u0G-Vx-iMB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3QB-Qt-WtC" secondAttribute="bottom" id="4Kx-XD-0Y2"/>
+                                    <constraint firstAttribute="trailing" secondItem="3QB-Qt-WtC" secondAttribute="trailing" id="hMp-lx-PJU"/>
+                                    <constraint firstItem="3QB-Qt-WtC" firstAttribute="top" secondItem="gaJ-1P-JOW" secondAttribute="top" id="kVl-BP-UzM"/>
+                                    <constraint firstItem="3QB-Qt-WtC" firstAttribute="leading" secondItem="gaJ-1P-JOW" secondAttribute="leading" id="p1u-za-3Xy"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gaJ-1P-JOW" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="BWH-YV-SiZ"/>
+                            <constraint firstItem="gaJ-1P-JOW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="I9Q-67-3j9"/>
+                            <constraint firstItem="3QB-Qt-WtC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="TMM-9o-ohM"/>
+                            <constraint firstAttribute="bottom" secondItem="gaJ-1P-JOW" secondAttribute="bottom" id="fod-EZ-Yap"/>
+                            <constraint firstItem="gaJ-1P-JOW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qtW-Fo-Lrl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weekly Diary" id="5Vn-RR-MuR"/>
+                    <size key="freeformSize" width="375" height="1250"/>
+                    <connections>
+                        <outlet property="datebutton" destination="JC8-6D-MTT" id="zRh-k7-pCi"/>
+                        <outlet property="friButton" destination="OT2-99-oQp" id="H3K-52-b5d"/>
+                        <outlet property="labelDisplay1" destination="3xQ-6l-WcH" id="6Gl-gU-0WJ"/>
+                        <outlet property="labelDisplay2" destination="Ywp-oS-p9r" id="rep-X4-68k"/>
+                        <outlet property="labelDisplay3" destination="4NR-b3-j09" id="aTE-h6-Ay0"/>
+                        <outlet property="labelDisplay4" destination="QbZ-iA-ucU" id="xYA-Ez-Psi"/>
+                        <outlet property="labelDisplay5" destination="WTF-i6-tIz" id="jLZ-AE-I7Q"/>
+                        <outlet property="labelDisplay6" destination="8Y4-a4-TGP" id="Jq1-FV-4f6"/>
+                        <outlet property="labelDisplay7" destination="nUl-DH-W3C" id="gNe-jC-4G9"/>
+                        <outlet property="monButton" destination="sOg-yQ-72E" id="hEA-UP-BS3"/>
+                        <outlet property="satButton" destination="Ybo-hT-ssZ" id="A9E-zw-bf5"/>
+                        <outlet property="sunButton" destination="8uT-v0-F5s" id="h4b-gc-Ltn"/>
+                        <outlet property="thuButton" destination="TBM-qo-IZs" id="X7H-s7-HVW"/>
+                        <outlet property="tueButton" destination="FPx-rU-g00" id="Utz-gV-QHC"/>
+                        <outlet property="wedButton" destination="ZJW-3J-bvk" id="xDA-Zk-Td0"/>
+                        <outlet property="whatDo" destination="3sV-hO-XT3" id="cLd-Cv-yPq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="21l-Pv-Ph8" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="224.80000000000001" y="-83.658170914542737"/>
+        </scene>
+        <!--Week View Controller-->
+        <scene sceneID="OnI-Gk-lj3">
+            <objects>
+                <viewController id="J8c-I4-BfV" customClass="WeekViewController" customModule="ass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qGJ-Tt-mpM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCj-vk-f6j">
+                                <rect key="frame" x="94" y="496" width="186" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ok.png"/>
+                                <state key="highlighted" image="okPressed.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="dateView" id="FJs-WB-Vqc"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PiI-Li-ksR">
+                                <rect key="frame" x="37" y="157" width="300" height="248"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="J8c-I4-BfV" id="R8p-of-Ihc"/>
+                                    <outlet property="delegate" destination="J8c-I4-BfV" id="ufQ-yp-yWb"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GxY-ul-YPK"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="TCj-vk-f6j" id="JqJ-by-bhd"/>
+                        <outlet property="pickerWeek" destination="PiI-Li-ksR" id="n8L-o5-wLl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wn8-KH-jfI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1197.5999999999999" y="-657.12143928035982"/>
+        </scene>
+        <!--Add Diary View Controller-->
+        <scene sceneID="WAn-Se-1qM">
+            <objects>
+                <viewController storyboardIdentifier="TextVC" id="ZBb-Ac-Y3y" customClass="AddDiaryViewController" customModule="ass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DQf-fE-SyT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ePe-4F-NlS">
+                                <rect key="frame" x="67" y="153" width="240" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94674951424870468" green="0.87712664170555099" blue="0.85545640496645736" alpha="0.27959947183098594" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vR-vH-DYA">
+                                <rect key="frame" x="119" y="482" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="ZBb-Ac-Y3y" id="ula-1i-lYh"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘 하루 어떤 감정을 느꼈나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzb-o8-4km">
+                                <rect key="frame" x="79" y="403" width="296" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘 하루 있었던 일을  자유롭게 적어보세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p82-Ra-xU3">
+                                <rect key="frame" x="39" y="71" width="296" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snv-Xd-GCv">
+                                <rect key="frame" x="93" y="576" width="189" height="71"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="OK" image="Save.png"/>
+                                <state key="highlighted" image="Savepress.png"/>
+                                <connections>
+                                    <action selector="SendButtonClicked:" destination="ZBb-Ac-Y3y" eventType="touchUpInside" id="NCO-kC-FJu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hxr-k2-WZt"/>
+                    </view>
+                    <connections>
+                        <outlet property="emotiontextFieldInput" destination="9vR-vH-DYA" id="G7l-VD-BxQ"/>
+                        <outlet property="sendText" destination="ePe-4F-NlS" id="Szn-RO-ygt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fe0-2d-EuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="115.59220389805098"/>
+        </scene>
+        <!--Feeling View Controller-->
+        <scene sceneID="OcQ-sn-jOA">
+            <objects>
+                <viewController id="riE-dF-s3k" customClass="FeelingViewController" customModule="ass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EfR-oc-HCd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Z-T1-A7B">
+                                <rect key="frame" x="236" y="284" width="92" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="eat.png"/>
+                                <connections>
+                                    <action selector="A:" destination="riE-dF-s3k" eventType="touchUpInside" id="53m-vD-Njb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9e3-LT-oxp">
+                                <rect key="frame" x="143" y="280" width="85" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="musicoff.png">
+                                    <color key="titleShadowColor" red="1" green="0.90218940645360457" blue="0.64015477036067381" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="A:" destination="riE-dF-s3k" eventType="touchUpInside" id="qsY-uH-OXl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4h-sv-4bV">
+                                <rect key="frame" x="48" y="283" width="88" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="date.png"/>
+                                <connections>
+                                    <action selector="A:" destination="riE-dF-s3k" eventType="touchUpInside" id="UT5-wZ-rOU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="오늘은 어떤 활동을 했나요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OCb-PI-5ml">
+                                <rect key="frame" x="92" y="156" width="202" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="상황에 맞는 스티커를 클릭해보세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TK6-k1-znK">
+                                <rect key="frame" x="94" y="207" width="199" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="g9N-mq-X6J"/>
+                    </view>
+                    <connections>
+                        <outlet property="emotion1" destination="f4h-sv-4bV" id="efe-Ol-Jod"/>
+                        <outlet property="emotion2" destination="9e3-LT-oxp" id="ORT-8Q-zoj"/>
+                        <outlet property="emotion3" destination="q4Z-T1-A7B" id="SkR-wx-lkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUw-gd-md7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677.60000000000002" y="996.25187406296857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WaN-bE-Azg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sn7-Oc-3P6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hd2-Ry-9sx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tmW-w2-i2j"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FF-9O-S4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-943" y="116"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Save.png" width="202" height="79"/>
+        <image name="Savepress.png" width="202" height="79"/>
+        <image name="background.png" width="636" height="1334"/>
+        <image name="date.png" width="101" height="84"/>
+        <image name="eat.png" width="101" height="84"/>
+        <image name="fri.png" width="842" height="176"/>
+        <image name="mon.png" width="842" height="176"/>
+        <image name="musicoff.png" width="101" height="84"/>
+        <image name="ok.png" width="202" height="79"/>
+        <image name="okPressed.png" width="202" height="79"/>
+        <image name="sat.png" width="842" height="176"/>
+        <image name="sun.png" width="842" height="176"/>
+        <image name="thu.png" width="842" height="176"/>
+        <image name="tue.png" width="842" height="176"/>
+        <image name="wed.png" width="842" height="176"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="FJs-WB-Vqc"/>
+    </inferredMetricsTieBreakers>
+</document>
